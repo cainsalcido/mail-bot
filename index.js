@@ -1,4 +1,4 @@
-// mail-bot.js
+
 const nodemailer = require('nodemailer');
 
 // Configuration
