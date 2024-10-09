@@ -6,7 +6,7 @@ A basic mail bot template using Node.js and Nodemailer.
 
 1. Clone this repository to your local machine.
 2. Install the dependencies by running `npm install`.
-3. Replace the placeholders in `mail-bot.js` with your actual SMTP credentials and email addresses.
+3. Create a `config.json` file with your SMTP credentials and email addresses.
 4. Use the `sendEmail` function to send emails from your application.
 
 ## Usage
