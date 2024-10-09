@@ -1,2 +1,18 @@
-# mail-bot
-Simple bot to test mail functionality, (send an email.) 
+# Mail Bot
+
+A basic mail bot template using Node.js and Nodemailer.
+
+## Getting Started
+
+1. Clone this repository to your local machine.
+2. Install the dependencies by running `npm install`.
+3. Replace the placeholders in `mail-bot.js` with your actual SMTP credentials and email addresses.
+4. Use the `sendEmail` function to send emails from your application.
+
+## Usage
+
+You can use the `sendEmail` function to send emails from your application. For example:
+```javascript
+const mailBot = require('./mail-bot');
+
+mailBot.sendEmail('Hello from Mail Bot!', 'This is a test email sent from the mail bot.');
