@@ -1,6 +1,6 @@
 # Mail Bot
 
-A basic mail bot template using Node.js and Nodemailer.
+A basic mail bot template using [Node.js](https://github.com/nodejs/node) and [Nodemailer](https://github.com/nodemailer/nodemailer)
 
 ## Getting Started
 
