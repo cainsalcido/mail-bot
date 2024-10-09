@@ -1,22 +1,15 @@
 
 const nodemailer = require('nodemailer');
-
-// Configuration
-const SMTP_HOST = 'your-smtp-host';
-const SMTP_PORT = 587;
-const SMTP_USER = 'your-smtp-username';
-const SMTP_PASSWORD = 'your-smtp-password';
-const FROM_EMAIL = 'your-from-email';
-const TO_EMAIL = 'your-to-email';
+const config = require('./config.json');
 
 // Create a transporter object
 const transporter = nodemailer.createTransport({
-  host: SMTP_HOST,
-  port: SMTP_PORT,
+  host: config.smtp.host,
+  port: config.smtp.port,
   secure: false, // or 'STARTTLS'
   auth: {
-    user: SMTP_USER,
-    pass: SMTP_PASSWORD
+    user: config.smtp.user,
+    pass: config.smtp.password
   }
 });
 
@@ -24,8 +17,8 @@ const transporter = nodemailer.createTransport({
 async function sendEmail(subject, message) {
   try {
     const mailOptions = {
-      from: FROM_EMAIL,
-      to: TO_EMAIL,
+      from: config.fromEmail,
+      to: config.toEmail,
       subject: subject,
       text: message
     };

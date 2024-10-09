@@ -1,0 +1,10 @@
+{
+    "smtp": {
+      "host": "your-smtp-host",
+      "port": 587,
+      "user": "your-smtp-username",
+      "password": "your-smtp-password"
+    },
+    "fromEmail": "your-from-email",
+    "toEmail": "your-to-email"
+  }
